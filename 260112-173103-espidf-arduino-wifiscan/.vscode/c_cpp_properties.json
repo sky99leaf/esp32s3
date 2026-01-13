@@ -8,10 +8,10 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/sa/Documents/PlatformIO/Projects/260112-173103-espidf-arduino-wifiscan/include",
-                "/home/sa/Documents/PlatformIO/Projects/260112-173103-espidf-arduino-wifiscan/src",
+                "/home/sa/a_work/gitRepos/esp32s3/260112-173103-espidf-arduino-wifiscan/include",
+                "/home/sa/a_work/gitRepos/esp32s3/260112-173103-espidf-arduino-wifiscan/src",
                 "/home/sa/.platformio/packages/framework-espidf@3.40407.240606/components/esp_ringbuf/include",
-                "/home/sa/Documents/PlatformIO/Projects/260112-173103-espidf-arduino-wifiscan/.pio/build/esp32dev/config",
+                "/home/sa/a_work/gitRepos/esp32s3/260112-173103-espidf-arduino-wifiscan/.pio/build/esp32dev/config",
                 "/home/sa/.platformio/packages/framework-espidf@3.40407.240606/components/newlib/platform_include",
                 "/home/sa/.platformio/packages/framework-espidf@3.40407.240606/components/freertos/include",
                 "/home/sa/.platformio/packages/framework-espidf@3.40407.240606/components/freertos/include/esp_additions/freertos",
@@ -167,10 +167,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/sa/Documents/PlatformIO/Projects/260112-173103-espidf-arduino-wifiscan/include",
-                    "/home/sa/Documents/PlatformIO/Projects/260112-173103-espidf-arduino-wifiscan/src",
+                    "/home/sa/a_work/gitRepos/esp32s3/260112-173103-espidf-arduino-wifiscan/include",
+                    "/home/sa/a_work/gitRepos/esp32s3/260112-173103-espidf-arduino-wifiscan/src",
                     "/home/sa/.platformio/packages/framework-espidf@3.40407.240606/components/esp_ringbuf/include",
-                    "/home/sa/Documents/PlatformIO/Projects/260112-173103-espidf-arduino-wifiscan/.pio/build/esp32dev/config",
+                    "/home/sa/a_work/gitRepos/esp32s3/260112-173103-espidf-arduino-wifiscan/.pio/build/esp32dev/config",
                     "/home/sa/.platformio/packages/framework-espidf@3.40407.240606/components/newlib/platform_include",
                     "/home/sa/.platformio/packages/framework-espidf@3.40407.240606/components/freertos/include",
                     "/home/sa/.platformio/packages/framework-espidf@3.40407.240606/components/freertos/include/esp_additions/freertos",

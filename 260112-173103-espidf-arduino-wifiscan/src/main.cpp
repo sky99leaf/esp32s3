@@ -32,7 +32,7 @@ void wifiScan() {
             delay(10);
         }
     }
-    Serial.println("last line github cloned");
+    Serial.println("9.10am last line github cloned");
 }
 
 #if !CONFIG_AUTOSTART_ARDUINO
@@ -71,6 +71,6 @@ void setup() {
 void loop() {
     wifiScan();
     // Wait a bit before scanning again
-    delay(5000);
+    delay(1000);
 }
 #endif 
