@@ -32,7 +32,7 @@ void wifiScan() {
             delay(10);
         }
     }
-    Serial.println("wed 1 last line github cloned");
+    Serial.println("proj_B last line github cloned");
 }
 
 #if !CONFIG_AUTOSTART_ARDUINO

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../projA"
+		},
+		{
+			"name": "projB",
+			"path": "../../../../../../../local/projB/projB"
+		},
+		{
+			"name": "260112-173103-espidf-arduino-wifiscan",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
