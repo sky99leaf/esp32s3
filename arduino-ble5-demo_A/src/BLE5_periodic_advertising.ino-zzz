@@ -7,12 +7,7 @@
 
 #include <BLEDevice.h>
 #include <BLEAdvertising.h>
-#include <Arduino.h> // to get Serial defn
 
-#include <Adafruit_NeoPixel.h> 
-#define LED_PIN 48
-
-// #define LED_PIN 2   // onboard LED on most ESP32-S3 dev boards
 
 esp_ble_gap_ext_adv_params_t ext_adv_params_2M = {
     .type = ESP_BLE_GAP_SET_EXT_ADV_PROP_NONCONN_NONSCANNABLE_UNDIRECTED,
@@ -40,6 +35,14 @@ static uint8_t raw_scan_rsp_data_2m[] = {
 };
 
 // static uint8_t raw_scan_rsp_data_2m[] = {
+//     0x02, 0x01, 0x06,          // Flags
+//     0x02, 0x0A,  0xEB,          // TX power
+//     0x13, 0x09,                // Length (19), Type = Complete Local Name
+//     't','e','s','t',' ','t','h','u','r','s',' ','8',':','4','3','a','m',
+//     0x00                       // Null terminator (optional)
+// };
+
+// static uint8_t raw_scan_rsp_data_2m[] = {
 //         0x02, 0x01, 0x06,
 //         0x02, 0x0a, 0xeb,
 //         0x12, 0x09, 'Z', 'S', 'P', '_', 'M', 'U', 'L', 'T', 'I', '_', 'A',
@@ -51,43 +54,23 @@ static esp_ble_gap_periodic_adv_params_t periodic_adv_params = {
     .interval_max = 0x640,
     .properties = 0, // Do not include TX power
 };
-static uint8_t periodic_adv_raw_data[] = {
-    0x02, 0x01, 0x06,
-    0x02, 0x0A, 0xEB,
-    0x03, 0x03, 0xAB, 0xCD,
-    0x14, 0x09,                      // length=20, type=Complete Local Name
-    'l','e','d',' ','d','o','u','b','l','e',' ',
-    'f','l','a','s','h',' ','b','t',
-    0x00                             // optional terminator
-};
 
-// static uint8_t periodic_adv_raw_data[] = {
-//         0x02, 0x01, 0x06,
-//         0x02, 0x0a, 0xeb,
-//         0x03, 0x03, 0xab, 0xcd,
-//         0x11, 0x09, 'E', 'S', 'P', '_', 'P', 'E', 'R', 'I', 'O', 'D', 'I',
-//         'C', '_', 'A', 'D', 'V'
-// };
+static uint8_t periodic_adv_raw_data[] = {
+        0x02, 0x01, 0x06,
+        0x02, 0x0a, 0xeb,
+        0x03, 0x03, 0xab, 0xcd,
+        0x11, 0x09, 'E', 'S', 'P', '_', 'P', 'E', 'R', 'I', 'O', 'D', 'I',
+        'C', '_', 'A', 'D', 'V'
+};
 
 
 uint8_t addr_2m[6] = {0xc0, 0xde, 0x52, 0x00, 0x00, 0x02};
 
 BLEMultiAdvertising advert(1); // max number of advertisement data 
-// setup global variable "pixel". this board uses NeoPixel by adafruit
-Adafruit_NeoPixel pixel(1, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("42 Multi-Advertising...");
-
-  //     neopixelWrite(48, 0, 0, 0); // turn off annoying bright white led
-  //pinMode(LED_PIN, OUTPUT); // <--- add this
-  // this board uses NeoPixel by adafruit
-  Adafruit_NeoPixel pixel(1, LED_PIN, NEO_GRB + NEO_KHZ800);
-  pixel.begin();
-  // pixel.setBrightness(5);   // optional
-  pixel.show();              // turn off initially
-
+  Serial.println("3 Multi-Advertising...");
 
   BLEDevice::init("");
 
@@ -104,47 +87,5 @@ void setup() {
 }
 
 void loop() {
-  // First flash
-  pixel.setPixelColor(0, pixel.Color(255, 0, 0));
-  pixel.setBrightness(44);
-  pixel.show();
-  delay(22);
-
-  // 300 ms gap
-  pixel.setPixelColor(0, pixel.Color(0, 0, 0));
-  pixel.show();
-  delay(300);
-
-  // Second flash
-  pixel.setPixelColor(0, pixel.Color(255, 0, 0));
-  pixel.show();
-  delay(22);
-
-  // 700 ms gap before repeating
-  pixel.setPixelColor(0, pixel.Color(0, 0, 0));
-  pixel.show();
-  delay(700);
+  delay(2000);
 }
-
-// void loop() {
-//   delay(2000);
-// }
-
-// void loop() {
-//   digitalWrite(LED_PIN, HIGH);   // LED ON
-//   delay(500);                    // 0.5 sec
-
-//   digitalWrite(LED_PIN, LOW);    // LED OFF
-//   delay(1000);                   // 1 sec
-// }
-
-// void loop() {
-//   pixel.setPixelColor(0, pixel.Color(255, 0, 0));  // red ON
-//   pixel.setBrightness(5);
-//   pixel.show();
-//   delay(500);
-
-//   pixel.setPixelColor(0, pixel.Color(0, 0, 0));    // OFF
-//   pixel.show();
-//   delay(1000);
-// }
