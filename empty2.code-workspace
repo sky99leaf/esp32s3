@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "empty2"
+		},
+		{
+			"name": "260114-121331-espidf-arduino-blink",
+			"path": "../../../Documents/PlatformIO/Projects/260114-121331-espidf-arduino-blink"
+		},
+		{
+			"name": "260115-081845-arduino-ble5-advertising",
+			"path": "../../../Documents/PlatformIO/Projects/260115-081845-arduino-ble5-advertising"
+		},
+		{
+			"name": "260115-082820-arduino-ble5-advertising",
+			"path": "../../../Documents/PlatformIO/Projects/260115-082820-arduino-ble5-advertising"
+		}
+	],
+	"settings": {}
+}
