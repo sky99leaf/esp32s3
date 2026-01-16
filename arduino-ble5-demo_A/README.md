@@ -10,6 +10,21 @@ Next to "Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)" click "arduino"
 Then on top click on "installed",then click "expressif 32" then examples tab then do pulldown to desired example.
 Then "import" the example. It goes somewhere in /docs ??
 
+## need to do this after installing platformIO ubuntu
+- from error in Ubuntu message about no access to serial port, then pasted to ai, got this answer
+```
+# this gets url into the file using -O argument
+curl -O https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules 
+cat 99-platformio-udev.rules 
+# apply the file
+sudo cp 99-platformio-udev.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+sudo usermod -a -G dialout $USER
+# run history and trim off leading command count
+history | cut -c 8- > hist_99rules 
+```
+
 
 from orig:  
 How to build PlatformIO based project

@@ -1,0 +1,82 @@
+df
+cd /
+ls
+mkdir local
+sudo mkdir local
+cd local
+ls /home/sa/downloads
+ls /home/sa/Downloads/
+mv /home/sa/Downloads/Python-3.14.2 .
+sudo mv /home/sa/Downloads/Python-3.14.2 .
+ls -l
+cd Python-3.14.2/
+ls
+ls -l
+ls Python/
+ls
+python
+which python3
+ls
+cd ..
+sudo rm -rf Python-3.14.2/
+ls
+which python3
+ls -l /usr/bin
+ls -l /usr/bin/pyth*
+sudo apt install python3-venv
+vi installPython
+id
+cp /tmp/foo installPython
+sudo installPython
+sudo cp /tmp/foo installPython
+sudo chmod 755 installPython 
+./installPython 
+ls
+vi installPython 
+sudo cp /tmp/foo installPython
+cat installPython 
+ls -lt
+cd ..
+ls -lt
+ls -ld .
+sudo chown sa .
+ls -ld .
+ls
+vi installPython 
+ls -l
+sudo chown sa *
+cat foo
+cp foo installPython 
+ls
+apt-get install git
+sudo apt-get install git
+df
+ls -a
+git config --global user.name "username"
+git config --global user.email useremail@example.com
+ls
+mkdir download
+cd download/
+curl
+sudo apt install curl
+curl -O https://raw.githubusercontent.com/platformio/platformio-core/develop/scripts/99-platformio-udev.rules
+ls
+cat 99-platformio-udev.rules 
+rm 99-platformio-udev.rules 
+curl
+curl --help
+curl https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules
+curl https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules 
+curl -O https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules 
+ls
+cat 99-platformio-udev.rules 
+sudo cp 99-platformio-udev.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+ls /etc/udev
+ls /etc/udev/rules.d/
+sudo usermod -a -G dialout $USER
+history > hist_99rules
+cat hist_99rules 
+history | cut -c 8-
+history | cut -c 8- > hist_99rules 
