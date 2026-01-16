@@ -1,4 +1,5 @@
 
+friday
 --this done with ble demo--
 VSCODE esp32 demo:
 * poorly designed and very confusing console for this  
