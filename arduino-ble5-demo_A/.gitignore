@@ -6,4 +6,5 @@
 **/.vscode/
 # any machine-specific platformIO log? file
 .pio
+**/.pio/
  

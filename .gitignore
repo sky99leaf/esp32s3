@@ -1,3 +1,11 @@
-arduino-ble5-demo_A/.vscode/c_cpp_properties.json
-arduino-ble5-demo_A/.vscode/launch.json
-arduino-ble5-demo_A/.vscode/c_cpp_properties.json
+
+# setup on lenovo
+.pio
+.vscode
+# To ignore every .vscode folder anywhere in your project,
+**/.vscode/
+# any machine-specific platformIO log? file
+.pio
+**/.pio/
+ 
+
