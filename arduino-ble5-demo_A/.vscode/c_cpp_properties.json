@@ -8,10 +8,10 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/sa/a_work/gitRepos/esp32s3/arduino-ble5-demo_A/include",
-                "/home/sa/a_work/gitRepos/esp32s3/arduino-ble5-demo_A/src",
+                "/home/sa/a_work/esp32/esp32s3/arduino-ble5-demo_A/include",
+                "/home/sa/a_work/esp32/esp32s3/arduino-ble5-demo_A/src",
                 "/home/sa/.platformio/packages/framework-arduinoespressif32/libraries/BLE/src",
-                "/home/sa/a_work/gitRepos/esp32s3/arduino-ble5-demo_A/.pio/libdeps/esp32-s3-devkitc-1/Adafruit NeoPixel",
+                "/home/sa/a_work/esp32/esp32s3/arduino-ble5-demo_A/.pio/libdeps/esp32-s3-devkitc-1/Adafruit NeoPixel",
                 "/home/sa/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include",
                 "/home/sa/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include",
                 "/home/sa/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos",
@@ -248,10 +248,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/sa/a_work/gitRepos/esp32s3/arduino-ble5-demo_A/include",
-                    "/home/sa/a_work/gitRepos/esp32s3/arduino-ble5-demo_A/src",
+                    "/home/sa/a_work/esp32/esp32s3/arduino-ble5-demo_A/include",
+                    "/home/sa/a_work/esp32/esp32s3/arduino-ble5-demo_A/src",
                     "/home/sa/.platformio/packages/framework-arduinoespressif32/libraries/BLE/src",
-                    "/home/sa/a_work/gitRepos/esp32s3/arduino-ble5-demo_A/.pio/libdeps/esp32-s3-devkitc-1/Adafruit NeoPixel",
+                    "/home/sa/a_work/esp32/esp32s3/arduino-ble5-demo_A/.pio/libdeps/esp32-s3-devkitc-1/Adafruit NeoPixel",
                     "/home/sa/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include",
                     "/home/sa/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include",
                     "/home/sa/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos",
