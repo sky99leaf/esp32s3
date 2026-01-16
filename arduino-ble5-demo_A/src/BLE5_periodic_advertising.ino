@@ -9,6 +9,9 @@
 #include <BLEAdvertising.h>
 #include <Arduino.h> // to get Serial defn
 
+// WARNING ADD THIS TO PLATFORM.INI WHEN USING PLATFORMIO. Arduino, do different way.
+//   lib_deps = adafruit/Adafruit NeoPixel
+
 #include <Adafruit_NeoPixel.h> 
 #define LED_PIN 48
 

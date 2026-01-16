@@ -2,6 +2,9 @@
 at time of writing, this folder has 2 copies of wifi scan demo for esp32s3
 Both use "platformIO", not "esp-idf".  
 
+git config --global user.name "username"
+git config --global user.email useremail@example.com
+
 VSCODE esp32 demo:
 * poorly designed and very confusing console for this  
 from platformIO->Open choose "project examples"
