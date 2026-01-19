@@ -1,0 +1,9 @@
+
+# stuff to install for vscode on ubuntu
+# first do update/upgrade or it fails later
+sudo apt update
+sudo apt upgrade -y
+# install git
+apt-get install git
+# after installing platformIO plugin, install python
+sudo apt install python3-venv
