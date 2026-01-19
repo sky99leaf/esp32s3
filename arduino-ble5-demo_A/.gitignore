@@ -5,7 +5,6 @@
 # To ignore every .vscode folder anywhere in your project,
 **/.vscode/
 # any machine-specific platformIO log? file
-.pio
 **/.pio/
-**/launch.json
+
  
