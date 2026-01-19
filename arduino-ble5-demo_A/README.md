@@ -1,4 +1,4 @@
-
+## this demo
 friday 2
 --this done with ble demo--
 VSCODE esp32 demo:
@@ -11,6 +11,22 @@ Next to "Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)" click "arduino"
 Then on top click on "installed",then click "expressif 32" then examples tab then do pulldown to desired example.
 Then "import" the example. It goes somewhere in /docs ??
 
+# Setting up vscode in ubuntu
+```
+# stuff to install for vscode on ubuntu
+# first do update/upgrade or it fails later
+sudo apt update
+sudo apt upgrade -y
+# install git
+apt-get install git
+# after installing platformIO plugin, install python
+sudo apt install python3-venv
+
+# Set your global name
+git config --global user.name "ubuntu17"
+# Set your global email
+git config --global user.email "ubuntu17@example.com"
+```
 ## need to do this after installing platformIO ubuntu
 - from error in Ubuntu message about no access to serial port, then pasted to ai, got this answer
 ```
