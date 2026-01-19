@@ -27,10 +27,13 @@ git config --global user.name "ubuntu17"
 # Set your global email
 git config --global user.email "ubuntu17@example.com"
 ```
-## need to do this after installing platformIO ubuntu
-- from error in Ubuntu message about no access to serial port, then pasted to ai, got this answer
+## platformIO ubuntu
+- from error in Ubuntu: 
+Looking for upload port...Warning! Please install 99-platformio-udev.rules. 
+Pasted message to gemini ai, got this answer but needed to modify url.
 ```
 # this gets url into the file using -O argument
+sudo apt  install curl
 curl -O https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules 
 cat 99-platformio-udev.rules 
 # apply the file
