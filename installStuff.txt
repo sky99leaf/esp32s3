@@ -7,3 +7,8 @@ sudo apt upgrade -y
 apt-get install git
 # after installing platformIO plugin, install python
 sudo apt install python3-venv
+
+# Set your global name
+git config --global user.name "ubuntu17"
+# Set your global email
+git config --global user.email "ubuntu17@example.com"
