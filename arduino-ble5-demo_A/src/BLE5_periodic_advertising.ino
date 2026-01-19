@@ -36,7 +36,7 @@ static uint8_t raw_scan_rsp_data_2m[] = {
     0x02, 0x01, 0x06,          // Flags
     0x02, 0x0A, 0xEB,          // TX power
     0x1B, 0x09,                // Length (27), Type = Complete Local Name
-    'a','_','w','o','r','k',' ',
+    'Z','_','w','o','r','k',' ',
     'a','r','d','u','i','n','o','-',
     'b','l','e','5','-','d','e','m','o','_','A',
     0x00                       // optional terminator
@@ -106,7 +106,9 @@ void setup() {
   advert.startPeriodicAdvertising(0);
 }
 
+int ct = 0;
 void loop() {
+  Serial.printf("one loop %d\n", ct++);
   // First flash
   pixel.setPixelColor(0, pixel.Color(255, 0, 0));
   pixel.setBrightness(44);
@@ -116,10 +118,10 @@ void loop() {
   // 300 ms gap
   pixel.setPixelColor(0, pixel.Color(0, 0, 0));
   pixel.show();
-  delay(300);
+  delay(600);
 
   // Second flash
-  pixel.setPixelColor(0, pixel.Color(0, 0, 255));
+  pixel.setPixelColor(0, pixel.Color(0, 255, 0));
   pixel.show();
   delay(22);
 
